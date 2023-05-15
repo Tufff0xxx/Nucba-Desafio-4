@@ -574,26 +574,32 @@ main{
     #menu-toggle:checked+.navbar-list {
         display: flex;
     }
+  
+    #hero{
+        width: min-content;
+        max-width: 100%;
+    }
     .hero-info {
-        width: 100%;
+        width: 90%;
         text-align: center;
         justify-content: center;
         align-items: center;
         gap: 30px;
+        
     }
     .hero-info h1 {
-        width: 90%;
+        width: 100%;
         max-width: 500px;
         min-width: unset;
+        font-size: 40px;
     }
     .hero-info p {
-        width: 60%;
+        width: 100%;
         max-width: 600px;
-        margin-left: 200px;
+        
     }
-    .hero-card {
-        display: none;
-    }
+    
+    
     #hero2 {
         width: 60%;
         max-width: 600px;
@@ -603,12 +609,12 @@ main{
     #Card-contacto{
         width: 100%;
     }
-    #Card-contacto{
+    #Card-contacto h1{
         font-size: 30px;
     }
     
     #Card-Batitelefono{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -616,10 +622,10 @@ main{
         width: 100%;
     }
     #mapa{
-        width: 90%;
+        width: 100%;
     }
-}
 
+}
 
 /*#Batgirl-Card{
     display: flex;
