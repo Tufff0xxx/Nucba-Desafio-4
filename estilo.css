@@ -348,27 +348,32 @@ main{
     
 }
 #contacto{
-    width: 100%;
+       width: 100%;
     background-color: var(--second-color);
     padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     
 }
 #Card-Batitelefono{
-    width: 450px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    padding-top: 15px;
     gap: 10px;
     background-color: var(--background);
     padding: 20px;
     border-radius: 15px;
 }
+#Card-Batitelefono img{
+    height: 350px;
+    width: 400px;
+}
+
 #titulos{
     display: flex;
     justify-content: space-around;
@@ -377,17 +382,13 @@ main{
     padding-right: 300px;
 }
 
-#contacto{
-    width: 100%;
-
-}
-
 #contacto-direccion{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: var(--primary);
+    gap: 15px;
 }
 #contacto-direccion :first-child{
     color: var(--secondary);
@@ -399,8 +400,8 @@ main{
     background-color: var(--background);
     border-radius: 12px;
     color: var(--primary);
-    width: 40%;
-    position: relative;
+    
+    
 }
 #Card-contacto h1{
     color: var(--secondary);
@@ -415,19 +416,16 @@ main{
     flex-direction: column;
     justify-content: space-around;
     color: var(--primary);
+    gap: 15px;
+    padding-top: 40px;
     
 }
 #contacto-datos :first-child{
     color: var(--secondary);
 }
-#contacto-imagen{
-    display: flex;
-    justify-content: center;
 
-}
-#contacto-imagen img{
-    max-width: 50%;
-}
+
+
 @media  (max-width: 992px) {
     .navbar {
         gap: 10px;
@@ -506,29 +504,116 @@ main{
         height: 60%;
        
     }
+
     #Card-Batitelefono{
-        width: 100%;
-        max-width: 350px;
-        
+        width: 90%;
+        display: flex;
+        flex-direction: column;
     }
-    #Card-Batitelefono img,
-    #contacto-direccion,
-    #contacto-datos
-    {
-        width: 65%;
-    }
-    #contacto-direccion{
-        gap: 10px;
-        padding-left: 5px;
-    }
-        
-    
+
+
 }
+ 
+ 
+
+        
+  
+
 
 
 
 @media (max-width: 576px){
-    
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        height: 33px;
+        margin-right: 0rem;
+        margin-top: 4px;    
+        /*   position: absolut;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background:var(--background);
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    */
+    }
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: var(--background);
+        border: 2px solid var(--primary);
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+    .navbar-list a {
+        font-size: 20px;
+    }
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .hero-info h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+    .hero-info p {
+        width: 60%;
+        max-width: 600px;
+        margin-left: 200px;
+    }
+    .hero-card {
+        display: none;
+    }
+    #hero2 {
+        width: 60%;
+        max-width: 600px;
+        height: 60%;
+       
+    }
+    #Card-contacto h1{
+        font-size: 60px;
+    }
+    #Card-Batitelefono{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Card-Batitelefono img{
+        width: 100%;
+    }
+    #mapa{
+        width: 100%;
+    }
 }
 
 
