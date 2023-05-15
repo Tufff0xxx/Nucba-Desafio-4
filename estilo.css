@@ -40,6 +40,8 @@ header{
     background-color: var(--background);
 
 }
+
+
 .navbar,
 .navbar-list {
     display: flex;
@@ -51,6 +53,7 @@ header{
 }
 .navbar{
     gap: 150px;
+    max-width: 1200px;
 }
 .navbar-list {
     gap: 30px;
@@ -243,6 +246,7 @@ main{
     justify-content: space-around;
     background-color: var(--second-color);
     padding: 40px;
+    width: 100%;
 }
 
 #Robin-Card{
@@ -344,7 +348,7 @@ main{
     
 }
 #contacto{
-    
+    width: 100%;
     background-color: var(--second-color);
     padding: 70px;
     display: flex;
@@ -352,6 +356,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
+    
 }
 #Card-Batitelefono{
     width: 450px;
@@ -372,6 +377,11 @@ main{
     padding-right: 300px;
 }
 
+#contacto{
+    width: 100%;
+
+}
+
 #contacto-direccion{
     display: flex;
     flex-direction: column;
@@ -389,13 +399,15 @@ main{
     background-color: var(--background);
     border-radius: 12px;
     color: var(--primary);
+    width: 40%;
+    position: relative;
 }
 #Card-contacto h1{
     color: var(--secondary);
+    text-align: center;
+    
 }
-#contacto-direccion img{
-    max-width: 50%;
-}
+
 
 #contacto-datos{
     display: flex;
@@ -494,10 +506,23 @@ main{
         height: 60%;
        
     }
-    #Cart-Batitelefono{
-        width: 60%;
+    #Card-Batitelefono{
+        width: 100%;
+        max-width: 350px;
         
     }
+    #Card-Batitelefono img,
+    #contacto-direccion,
+    #contacto-datos
+    {
+        width: 65%;
+    }
+    #contacto-direccion{
+        gap: 10px;
+        padding-left: 5px;
+    }
+        
+    
 }
 
 
