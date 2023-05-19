@@ -15,6 +15,17 @@
     --nightwind: blue;
 
 }
+.logo{
+    animation: logo 2s infinite;
+}
+@keyframes logo{
+    0%{
+        transform: scaleX(0%);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
 h1{
     color: var(--primary);
 }
@@ -606,6 +617,11 @@ main{
         height: 60%;
        
     }
+    #contacto{
+        width: 100%;
+        max-width: 417px;
+
+    }
     #Card-contacto{
         width: 100%;
     }
@@ -620,6 +636,7 @@ main{
     }
     #Card-Batitelefono img{
         width: 100%;
+        
     }
     #mapa{
         width: 100%;
