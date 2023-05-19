@@ -358,7 +358,17 @@ main{
     
     
 }
-#contacto{
+footer{
+    width: 100%;
+    background-color: var(--second-color);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+/*#contacto{
        width: 100%;
     background-color: var(--second-color);
     padding: 70px;
@@ -368,7 +378,7 @@ main{
     align-items: center;
     gap: 10px;
     
-}
+}*/
 #Card-Batitelefono{
     width: 90%;
     display: flex;
@@ -617,7 +627,7 @@ main{
         height: 60%;
        
     }
-    #contacto{
+    footer{
         width: 100%;
         max-width: 417px;
 
